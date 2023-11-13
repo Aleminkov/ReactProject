@@ -44,7 +44,9 @@ class Register {
     });
   }
 
-  async check(req, res) {}
+  async check(req, res, next) {
+    
+  }
 }
 
 module.exports = new Register();

@@ -11,7 +11,7 @@ const User = sequelize.define("users", {
 const Review = sequelize.define("review", {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   name: { type: DataTypes.STRING, allowNull: false },
-  stars: { type: DataTypes.INTEGER.UNSIGNED, allowNull: false },
+  stars: { type: DataTypes.SMALLINT, allowNull: false },
   text: { type: DataTypes.TEXT, allowNull: false },
 });
 

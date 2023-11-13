@@ -2,7 +2,7 @@ const Router = require('express')
 
 const router = new Router()
 
-router.get()
-router.post()
+router.get('/getReview')
+router.post('/addReview')
 
 module.exports = router
