@@ -1,7 +1,7 @@
 const { Chat } = require("../DB/models");
 const ApiError = require("../Error/ApiError");
 
-class chatController {
+class ChatController {
   //Give all messages from DB
   async findAllMessage(req, res, next) {
     const messages = await Chat.findAll();
@@ -23,6 +23,7 @@ class chatController {
     }
   }
 
+  //delete message from db
   async deleteMessage(req, res, next) {
     try {
       const { id } = req.body;
@@ -38,4 +39,4 @@ class chatController {
   }
 }
 
-module.exports = new chatController();
+module.exports = new ChatController();

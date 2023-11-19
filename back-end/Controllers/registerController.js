@@ -2,7 +2,7 @@ const { User } = require("../DB/models");
 const ApiError = require("../Error/ApiError");
 const bcrypt = require("bcrypt");
 
-class Register {
+class RegisterController {
   async login(req, res, next) {
     const { email, password } = req.body;
 
@@ -49,4 +49,4 @@ class Register {
   }
 }
 
-module.exports = new Register();
+module.exports = new RegisterController();
